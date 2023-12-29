@@ -107,7 +107,7 @@ button i{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 2em;
     padding: 2rem 0;
 
 }
@@ -115,7 +115,7 @@ button i{
     width: 60%;
     padding: 0 .9rem;
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: .5rem;
 }
 .main-content p{
     width: 80%;
@@ -154,7 +154,7 @@ button i{
 }
 .card-header h3{
     margin-top: .5rem;
-    font-size: .8rem;
+    font-size: .5rem;
     opacity: .8;
 }
 .card-header p{
