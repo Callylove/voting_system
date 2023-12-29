@@ -129,6 +129,7 @@ button i{
     background-color: #fff;
     margin: 20px 10px;
     border-radius: 5px;
+    padding: 0 1.5rem;
 
 }
 .card p{
@@ -147,8 +148,8 @@ button i{
     padding: 1.5rem;
 }
 .card-header h3{
-    margin-top: 30px;
-    font-size: 17px;
+    margin-top: .5rem;
+    font-size: 1.2rem;
     opacity: .8;
 }
 .card-header p{
