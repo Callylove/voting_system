@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="regexec.php">
+            <h1 class="register">Register</h1>
+            <span><i class="	fas fa-user-alt"></i></span>
+            <input type="text" name="first_name" placeholder="First Name"><br>
+            <span><i class="	fas fa-user-alt"></i></span>
+            <input type="text" name="last_name" placeholder="Last Name"><br>
+            <span><i class="fa fa-envelope"></i></span>
+            <input type="text" name="email" placeholder="Email Address"><br>
+            <span><i class="	fas fa-id-card"></i></span>
+            <input type="text" name="adm_no" placeholder="Admission Number"><br>
+            <span><i class="	fas fa-pen"></i></span>
+            <input type="text" name="phone" placeholder="Phone Number"><br>
+            <span><i class="	fas fa-hand-point-right"></i></span>
+            <select name="role" id="">
+                <option value="1">To vote</option>
+                <option value="1">Voter</option>
+            </select><br>
+            <span><i class="fas fa-key"></i></span>
+            <input type="password" name="password" placeholder="Password"><br>
+            <span><i class="	fas fa-lock"></i></span>
+            <input type="password" name="cpassword" placeholder="confirm password"><br>
+            <div class="agree_terms">
+                <div class="agree-btn">
+                    <input type="checkbox" class="check">
+                    <p>I Agree</p>
+                </div>
+                
+                <p>By clicking <span class="agree-register">Register</span>, you agree to the <a>Terms and Conditions</a> set out by this site, including our Cookie Use.</p>
+            </div>
+            <div class="btn">
+                <button class="btn_reg">
+                    Register
+                </button>
+                <a href="login.html" class="btn_signin">
+                    Sign In
+                </a>
+
+            </div>
+
+            
+        </form>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
