@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,500;1,7..72,300&family=Shadows+Into+Light&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Literata, sans-serif;
+    
+    
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(211, 211, 211, 0.671);
+}
+header{
+    width: 100%;
+    height: auto !important;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 0;
+    /* position: fixed;
+    top: 0; */
+    padding: 0.354rem 0.75rem;
+    background-color: #fff;
+}
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+
+header img{
+    width: 25%;
+    height: auto;
+}
+
+
+.nav-container{
+    height: 0;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+button{
+    border: none;
+    background-color: #fff;
+}
+button i{
+   color: green;
+   background-color: #fff;
+   font-size: 30px;
+   cursor: pointer;
+   animation:.8s ease-in-out 1 myanimation;
+}
+.links a{
+      background: #fff;
+      letter-spacing: .125rem;
+      display: block; 
+      color: green;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 0.75rem 0;
+      margin-left: 50px;
+      margin-bottom: 10px;
+ 
+
+}
+.links a.login-btn{
+    width: 100px;
+    height: 30px;
+    padding: 0 .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border: 1px solid green;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+.links a.login-btn:hover{
+    background-color: green;
+    color: white;
+}
+.links a.register-btn{
+    padding: 0 .5rem;
+    width: 200px;
+    height: 30px;  
+    border: 1px solid green;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: green;
+    color: #fff;
+}
+.links a.register-btn:hover{
+    background-color: white;
+    color: green;
+}
+.show {
+    height: 200px;
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 2rem 0;
+
+}
+.main-content h2{
+    text-align: center;
+    width: 100%;
+    padding: 0 .5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.main-content p{
+    width: 100%;
+    text-align: center;
+    padding: 0 .5rem;
+    color: rgb(37, 37, 37);
+    opacity: .9;
+    
+}
+.card{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #fff;
+    margin: 20px 10px;
+    border-radius: 5px;
+    padding: 0 1.5rem;
+
+}
+.card p{
+    font-family: Shadows+Into+Light,cursive;
+    font-style: italic;
+    text-align: center;
+    opacity: .9;
+}
+
+
+.card-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 1.5rem;
+}
+.card-header h3{
+    margin-top: .5rem;
+    font-size: .9rem;
+    opacity: .8;
+}
+.card-header p{
+    opacity: .7;
+}
+.card-header p span{
+    color: blue;
+    font-size: 1rem;
+    font-weight: bold;
+}
+ img:not(.logo) {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: fill;
+    background-position: center;
+  }
+.card-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 15px;
+}
+.card-btn a{
+    margin: 8px;
+    padding: .3rem 0;    
+    font-size: 17px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .14;
+}
+.card-btn a.manifesto{
+    text-align: center;
+    padding: 15px 0;
+    width: 150px;
+    height: 40px;
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    
+}
+.card-btn a.vote{
+    width: 60px;
+    border: 1px solid #dc3545;;
+    background-color: #dc3545;;
+    color: #fff;
+    font-weight: bold;
+}
+.card-btn a.vote:hover{
+    background-color: rgb(187, 34, 34);
+}
+.footer{
+    width: 100%;
+    border: 1px solid black;
+    color:white;
+    background-color: #000;
+    height: 90px;
+    padding: 20px;
+    text-align: center;
+}
+.footer span a{
+    margin: 5px;
+}
+
+
+
+/* Register */
+
+.container{
+    border: 1px solid #fff;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0;
+    
+}
+.container form{
+    width: 100%;
+    text-align: center;
+}
+.container .register{
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(41, 44, 42);
+    padding: 1rem;
+    transition: all linear .3s;
+}
+.container input{
+    width: 80%;
+    height: 30px;
+    margin: 10px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: all linear .3s;
+}
+
+.container select{
+    width: 80%;
+    margin: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.container .agree_terms{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 20px;
+    
+    
+}
+.container .agree_terms .agree-btn{
+    display: flex;
+    width: 100%;
+    justify-content: baseline;
+    align-items: baseline;
+    margin: 20px 0;
+    
+}
+.container .agree_terms .agree-btn .check{ 
+    width: 20px;
+    height: 20px;
+}
+.container .agree_terms .agree-btn p{
+    font-size:1rem;
+    font-weight: bold;
+}
+
+.container .agree_terms span{
+    padding: 0 5px;
+    background-color: blue; 
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+.container .agree_terms a{
+    color: blue;
+    cursor: pointer;
+}
+.container .agree_terms a:hover{
+    border-bottom: 1px solid blue;
+}
+.container .btn{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    
+}
+
+.container .btn .btn_reg{
+    width: 40%;
+    padding: 10px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+   
+}
+.container .btn .btn_reg:hover{
+    background-color: transparent;
+    color: blue;
+}
+.container .btn .btn_signin{
+    width: 30%;
+    padding: 10px;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+.container .btn .btn_signin:hover{
+    background-color: transparent;
+    color: green;
+}
+
+
+/* login page */
+
+.container-login{
+    border: 1px solid #fff;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0;
+    
+}
+.container-login form{
+    width: 100%;
+    text-align: center;
+}
+.container-login h1{
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(41, 44, 42);
+    text-align: center;
+    padding: 1rem;
+    transition: all linear .3s;
+}
+.container-login input{
+    width: 70%;
+    height: 30px;
+    margin: 10px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: all linear .3s;
+}
+.container-login .btn-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.container-login .btn-login a{
+    margin-left: 35px;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+.container-login a.btn-logins{
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    align-self: center;
+    margin-right: 50px;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+  
+    cursor: pointer;
+}
+.container-login button:hover{
+    background-color: transparent;
+    color: green;
+}
+@media  screen and (min-width:672px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .nav-header img{
+       margin-top: 10px;
+       width: 80px;
+       height: 80px;
+    }
+    .nav-header .nav-toggle{
+        display: none;
+    }
+    .nav-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+    .nav-container .links{
+       
+        display: flex;
+    }
+    
+  
+   
+    .main-content h2{
+        font-size: 1.5rem;
+    }
+    .main-content p{
+        font-size: 1rem;
+    }
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    .card{
+        width: 40%;
+    }
+    .card-btn{
+        width: 100%;
+    }
+    img:not(.logo) {
+        width: 150px;
+        height: 150px;
+    }
+    .container {
+        width: 50%;
+    }
+    .container .agree_terms{
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+    }
+    .container .agree_terms .agree-btn{
+        width: 50%;
+    }
+    .container-login{
+        width: 25%;
+        margin-top: 90px;
+    }
+    
+}
+/* body{
+    width: 100%;
+}
+section{
+    width: 100%;
+    height: 100%;
+   
+  
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 0;
+}
+.header-icon{
+    width: 100%;
+    height: 100%;
+}
+.header-icon img{
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+}
+.nav-container{
+   position: relative;
+   display: inline-block;
+   height: 0;
+}
+.links{
+    display: none;
+    position: relative;
+    width: 200px;
+}
+
+
+@keyframes myanimation{
+    0%{
+        scale: 0;
+    }
+    50%{
+        scale: 0.5
+    }
+    100%{
+        scale: 1;
+    }
+}
+a{
+    color: #000;
+    font-size: 16px;
+}
+.btn{
+    border: 1px solid red;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 0.5rem;
+    color: #000;
+}
+.show{
+    height: 200px;
+    
+}
+
+.show li{
+    margin-top: 20px;
+}
+.close-btn{
+    position: relative;
+    top: -60px;
+    left: 110px;
+    font-size: 50px;
+    margin: 0 20px;
+    color: green;
+    cursor: pointer;
+}
+.open-btn{
+    display: block;
+}
+
+@media screen and (min-width:672px){
+    .show{
+        display: none;
+    }
+    .open-btn,.close-btn{
+        display: none;
+    }
+    .links{
+        display: block;
+        height: 0;
+        border: 0;
+        position: absolute;
+        top: -50px;
+        display: flex;
+        justify-content: space-between;
+        right: 200px;
+        width: 400px;
+       
+        
+    }
+    .links a{
+        margin-right: 30px;
+    }
+}  */
